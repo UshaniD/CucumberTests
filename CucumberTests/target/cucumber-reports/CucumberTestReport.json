@@ -1,0 +1,122 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-02T18:12:54.830Z",
+        "line": 12,
+        "name": "Successful Login with Valid Credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9398000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Navigate to LogIn Page",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.user_Navigate_to_LogIn_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username \"\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.LoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Message displayed Login Successfully",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.message_displayed_Login_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-02T18:13:04.307Z",
+        "line": 15,
+        "name": "Successful LogOut",
+        "description": "",
+        "id": "login-action;successful-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User LogOut from the Application",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.user_LogOut_from_the_Application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Message displayed LogOut Successfully",
+            "match": {
+              "location": "stepDefinitions.LoginSteps.message_displayed_LogOut_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Login Action",
+    "description": "",
+    "id": "login-action",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/login.feature",
+    "tags": []
+  }
+]
